@@ -27,4 +27,4 @@ python app.py
 Render では次の設定を使います。
 
 - Build Command: `pip install -r requirements.txt`
-- Start Command: `gunicorn app:app`
+- Start Command: `gunicorn --bind 0.0.0.0:$PORT app:app`
